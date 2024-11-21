@@ -4,7 +4,7 @@ import { LoginRequest } from "@/app/types/Login/LoginReqest";
 import { LoginResponse } from "@/app/types/Login/LoginResponse";
 import { useLoginData } from "@/app/hooks/useLoginData";
 import { useRouter } from "next/navigation";
-
+import styles from "./loginForm.module.css";
 
 export default function LoginForm() {
 
@@ -36,9 +36,8 @@ export default function LoginForm() {
 
     return (
       <form onSubmit={onSubmit}>
-
-      <input {...register('email')}  />
-      <input {...register('password')} type="password" />
+      <input className={styles.loginForm_input} {...register('email')}   />
+      <input className={styles.loginForm_input} {...register('password')} type="password" />
       <button>送信</button>
       </form>
     );

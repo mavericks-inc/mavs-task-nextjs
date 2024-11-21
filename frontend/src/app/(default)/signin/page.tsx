@@ -4,7 +4,8 @@ export default function Signin() {
   
     return (
       <div>
-      <LoginForm/>
-    </div>
+        <h2>サインイン</h2>
+        <LoginForm/>
+      </div>
     );
   }

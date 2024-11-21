@@ -15,15 +15,17 @@ export default function Header (){
     
     return (
         <div className={styles.header}>
-            <h2 onClick={()=>router.push('/')}>メモアプリ</h2>
+            <h1 className={styles.header_logo} onClick={()=>router.push('/')}>メモアプリ</h1>
+            <div>
             {loginData && (
-                <div>
+            <div>
                 <p>ようこそ！</p>
                 <p>{loginData?.email}さん</p>
             </div>
             )}
             
-            {loginData ? <button onClick={logout}>ログアウト</button> :<button onClick={()=>router.push('/signin')}>サインイン</button>} 
+            {loginData ? <button  onClick={logout}>ログアウト</button> :<button className={styles.header_button} onClick={()=>router.push('/signin')}>サインイン</button>} 
+            </div>
         </div>
     )
 }
