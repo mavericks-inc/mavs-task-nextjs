@@ -13,7 +13,7 @@ export default function LoginForm() {
     const {register,handleSubmit,formState: { errors },reset} = useForm<LoginRequest>()
 
     const onSubmit = handleSubmit(async (reqest:LoginRequest)=>{
-        const response = await fetch('http://localhost:3001/auth/signin', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/signin`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', 
