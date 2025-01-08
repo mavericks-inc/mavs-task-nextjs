@@ -12,8 +12,8 @@ Volta をインストールしている場合は自動でバージョンが切�
 https://user-images.githubusercontent.com/51960141/232392797-4d1946b2-4f82-4363-9e00-b72be8e4eefc.mov
 
 ```
-git clone git@github.com:ユーザー名/mavs-task.git
-cd mavs-task
+git clone git@github.com:ユーザー名/mavs-task-nextjs.git
+cd mavs-task-nextjs
 ```
 
 ### パッケージインストール
@@ -22,7 +22,7 @@ cd mavs-task
 
 ```
 cd frontend
-yarn install
+npm install
 cp .env.example .env
 ```
 
@@ -31,7 +31,7 @@ cp .env.example .env
 ```
 cd ../
 cd backend
-yarn install
+npm install
 ```
 
 ### Docker を起動（ルートディレクトリで実行）
