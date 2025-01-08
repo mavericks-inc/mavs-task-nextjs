@@ -9,7 +9,7 @@ Volta をインストールしている場合は自動でバージョンが切�
 
 リポジトリの右上にあるフォークボタンをクリック
 
-https://user-images.githubusercontent.com/51960141/232392797-4d1946b2-4f82-4363-9e00-b72be8e4eefc.mov
+https://github.com/user-attachments/assets/c27496ba-cb8d-4cf4-9593-6fb84018120f
 
 ```
 git clone git@github.com:ユーザー名/mavs-task-nextjs.git
@@ -44,7 +44,8 @@ docker compose up --build
 ```
 
 ターミナルにこのように表示されていれば問題なく動作しています。
-![image](https://user-images.githubusercontent.com/51960141/232393291-f191f501-128b-4b95-8508-d3c2d39f3ea1.png)
+<img width="1231" alt="スクリーンショット 2024-11-22 9 02 44" src="https://github.com/user-attachments/assets/951a337c-1cb7-4337-ab4f-856c43898f57">
+
 
 ※postgresql には初期構築時にテストデータが投入されます。
 
@@ -54,7 +55,8 @@ http://localhost:3000
 
 このように表示できていれば ok です！
 
-<img width="1439" alt="image" src="https://github.com/mavericks-inc/mavs-task/assets/51960141/323534f0-acc1-4398-b5dc-af8616ef0e71">
+<img width="721" alt="スクリーンショット 2024-11-22 9 08 34" src="https://github.com/user-attachments/assets/f3c8b95d-3b82-43c2-b74c-888c7a8d16ce">
+
 
 ## ログイン機能について
 
@@ -66,7 +68,7 @@ http://localhost:3000/signin にアクセスし、
 上記のメールアドレス、パスワードを入力しログインボタンクリック  
 右上にメールアドレスが表示されていればログイン処理が正常に動作しています！
 
-https://github.com/mavericks-inc/mavs-task/assets/51960141/6c5e75da-8551-47f7-88bf-eb3e702a9405
+https://github.com/user-attachments/assets/6abafe98-e804-42a7-a56e-20314db0a519
 
 ## データベースクライアントツール
 
