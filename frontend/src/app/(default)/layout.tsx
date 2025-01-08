@@ -2,15 +2,14 @@ import Header from "../components/Header";
 import { LoginProvider } from "../contexts/login";
 
 export default function DefaultLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <LoginProvider>
-        <Header />
-        {children}
-    </LoginProvider>
-
-  );
+	return (
+		<LoginProvider>
+			<Header />
+			{children}
+		</LoginProvider>
+	);
 }
