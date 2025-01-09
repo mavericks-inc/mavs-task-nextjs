@@ -15,7 +15,7 @@ export default function LoginForm() {
 		formState: { errors },
 		reset,
 	} = useForm<LoginRequest>();
-	const onSubmit = handleSubmit(async (reqest: LoginRequest) => {
+	const onSubmit = handleSubmit(async (request: LoginRequest) => {
 		const response = await fetch(
 			`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/signin`,
 			{
@@ -24,8 +24,8 @@ export default function LoginForm() {
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify({
-					email: reqest.email,
-					password: reqest.password,
+					email: request.email,
+					password: request.password,
 				}),
 			},
 		);

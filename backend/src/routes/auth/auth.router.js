@@ -14,11 +14,15 @@ router.post('/signin', async (req, res, next) => {
     // リクエストパラメーター
     const { email, password } = req.body;
 
+    if (!email) return res.status(200).json({});
+
     // ユーザー存在チェックを行う
     const resSearchUser = await userService.searchUser('', '', email, password);
 
     // パラメータ存在しない場合は再ログインを促すため、空で返却する
     if (!resSearchUser.length) return res.status(200).json({});
+
+    console.log(email);
 
     // トークンを発行する
     const resCreateToken = await authService.createToken(email);
