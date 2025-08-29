@@ -7,15 +7,8 @@
     "dev": "nodemon src/index.js",
     "lint:fix": "node_modules/.bin/eslint --fix --ext \".js\" ."
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
+  "author": "mavericks",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "type": "module",
   "dependencies": {
     "aws-sdk": "^2.1210.0",
@@ -37,22 +30,10 @@
     "sequelize": "^6.31.0"
   },
   "devDependencies": {
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-config-standard-with-typescript": "^26.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
     "nodemon": "^2.0.22",
-    "prettier": "^2.8.2",
     "rimraf": "^3.0.2"
   },
   "volta": {
-    "node": "16.10.0",
-    "yarn": "1.22.19"
-  },
-  "engines": {
-    "node": "16.x"
+    "node": "24.2.0"
   }
 }

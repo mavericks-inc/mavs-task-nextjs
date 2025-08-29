@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,6 +21,6 @@
     "typescript": "^5"
   },
   "volta": {
-    "node": "18.17.0"
+    "node": "24.2.0"
   }
 }

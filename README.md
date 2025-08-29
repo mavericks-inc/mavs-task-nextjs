@@ -2,7 +2,7 @@
 
 ## 環境構築方法
 
-Node のバージョンは 18.17.0 です。  
+Node のバージョンは 24.2.0 です。  
 Volta をインストールしている場合は自動でバージョンが切り替わります。
 
 ### リポジトリのフォーク
@@ -46,7 +46,6 @@ docker compose up --build
 ターミナルにこのように表示されていれば問題なく動作しています。
 <img width="1231" alt="スクリーンショット 2024-11-22 9 02 44" src="https://github.com/user-attachments/assets/951a337c-1cb7-4337-ab4f-856c43898f57">
 
-
 ※postgresql には初期構築時にテストデータが投入されます。
 
 ### 動作確認
@@ -56,7 +55,6 @@ http://localhost:3000
 このように表示できていれば ok です！
 
 <img width="721" alt="スクリーンショット 2024-11-22 9 08 34" src="https://github.com/user-attachments/assets/f3c8b95d-3b82-43c2-b74c-888c7a8d16ce">
-
 
 ## ログイン機能について
 
