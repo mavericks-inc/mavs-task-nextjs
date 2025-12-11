@@ -54,4 +54,22 @@ router.get('/:id', authenticate, async (req, res, next) => {
   }
 });
 
+/**
+ * メモ編集
+ */
+router.put('/:id', authenticate, async (req, res, next) => {
+  try {
+    // console.log("/:id req.params =>", req.params);
+    const userId = req.jwtPayload.id;
+    const noteId = req.params.id
+    const { title, content } = req.body;
+    let body = await noteService.updateNote(userId, noteId, { title, content });
+
+    res.status(200).json(body);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({});
+  }
+});
+
 export default router;

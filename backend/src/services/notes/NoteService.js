@@ -1,3 +1,4 @@
+import { where } from "sequelize";
 import db from "../../models/index.js";
 
 // クラス
@@ -38,6 +39,17 @@ class NoteService {
       updated_at: rows.dataValues.updated_at,
     };
     return resData;
+  }
+  /**
+   * メモ編集
+   * @param user_id, note_id, body
+   */
+  async updateNote(user_id, note_id, body) {
+    // .update({更新内容}, { where: {}})
+    return db.Notes.update(
+      { title: body.title, content: body.content },
+      { where: { id: note_id, user_id: user_id }},
+    );
   }
 }
 
