@@ -19,7 +19,8 @@ class NoteService {
    * @return ランダム値
    */
   async getNoteList(user_id) {
-    return [{}];
+    const noteList = await db.Notes.findAll({ where: { user_id: user_id }});
+    return noteList;
   }
   /**
    * メモ詳細取得
