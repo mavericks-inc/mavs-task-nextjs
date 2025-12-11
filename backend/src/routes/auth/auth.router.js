@@ -24,8 +24,11 @@ router.post('/signin', async (req, res, next) => {
 
     console.log(email);
 
+    // idの取得
+    const id = resSearchUser[0].id;
+
     // トークンを発行する
-    const resCreateToken = await authService.createToken(email);
+    const resCreateToken = await authService.createToken(id, email);
 
     // 返却用データを生成
     const body = {
