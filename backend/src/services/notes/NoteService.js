@@ -51,6 +51,13 @@ class NoteService {
       { where: { id: note_id, user_id: user_id }},
     );
   }
+  /**
+   * メモ削除
+   * @param user_id, note_id
+   */
+  async deleteNote(user_id, note_id) {
+    return db.Notes.destroy({ where: { id: note_id, user_id: user_id }});
+  }
 }
 
 export default NoteService;
